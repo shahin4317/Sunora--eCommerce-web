@@ -7,18 +7,18 @@
     "rating": 4.8,
     "stock": 16,
     "description": "Soothing aloe vera gel to cool and hydrate sun-exposed skin.",
-    "image": "https://i.postimg.cc/example10.png",
+    "image": "https://i.postimg.cc/gJ5dhwN3/alovera.avif",
     "category": "Skincare"
   },
   {
     "id": 2,
-    "name": "Classic Cotton T-Shirt",
+    "name": "Classic Cotton Shirt",
     "brand": "UrbanWear",
     "price": 22,
     "rating": 4.8,
     "stock": 18,
     "description": "Soft and breathable cotton t-shirt for everyday comfort.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://i.postimg.cc/rFBRSsKm/shirt.png",
     "category": "Shirts"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://i.postimg.cc/GtktKJB9/sunglass.png",
     "category": "Sunglasses"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.9,
     "stock": 20,
     "description": "Keeps your drinks cold for up to 24 hours during hot summer days.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://i.postimg.cc/PJQjR6d2/botol.webp",
     "category": "Hydration"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.8,
     "stock": 25,
     "description": "High-protection sunscreen suitable for all skin types.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://i.postimg.cc/0QpRztM0/spf-50.jpg",
     "category": "Skincare"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.5,
     "stock": 30,
     "description": "Reusable cooling towel that stays cold for hours.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "https://i.postimg.cc/fRkGcWSm/tawal.jpg",
     "category": "Fitness"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.7,
     "stock": 18,
     "description": "USB rechargeable handheld fan with adjustable speed settings.",
-    "image": "https://i.postimg.cc/example7.png",
+    "image": "https://i.postimg.cc/wM0rNn6s/fan.jpg",
     "category": "Electronics"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.9,
     "stock": 12,
     "description": "Refreshing long-lasting fragrance with a cool summer scent.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://i.postimg.cc/gktF5Lvv/parfium.png",
     "category": "Perfume"
   },
   {
@@ -95,7 +95,7 @@
     "rating": 4.9,
     "stock": 8,
     "description": "Lightweight backpack with multiple compartments for travel essentials.",
-    "image": "https://i.postimg.cc/example9.png",
+    "image": "https://i.postimg.cc/RZjDw7zG/bag.jpg",
     "category": "Bags"
   },
     {
@@ -106,7 +106,7 @@
     "rating": 4.5,
     "stock": 22,
     "description": "Trendy bucket hat offering stylish sun protection.",
-    "image": "https://i.postimg.cc/example8.png",
+    "image": "https://i.postimg.cc/hPjN94HG/cap.png",
     "category": "Caps"
   }
 

@@ -25,7 +25,7 @@ const HeroSection = () => {
                         </span>
                     </div>
                     <animated.h1 style={styles} >
-                        <h1 className="text-7xl">SUMMER SALE</h1>
+                        SUMMER SALE
                     </animated.h1>
                     <h2 className='text-6xl font font-semibold '>50% OFF</h2>
                     <div>
