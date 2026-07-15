@@ -23,7 +23,7 @@ const Products = async () => {
                     <FaLongArrowAltRight />
                 </button></Link>
             </div>
-            <div className='flex gap-5 mt-8 mb-8 items-center justify-center'>
+            <div className='<div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 justify-center ">'>
                 {
                     products.map(product => <PopularProductCard key={product.id} product={product}></PopularProductCard>)
                 }

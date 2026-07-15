@@ -8,7 +8,7 @@ const PopularProductCard = ({ product }) => {
     return (
         <div className=''>
             <div className=''>
-                <div className="card w-60 h-96 bg-base-100 shadow-2xl flex flex-col">
+                <div className="card w-full h-[420px] bg-base-100 shadow-xl">
                     <figure className="h-44 flex items-center justify-center  w-full">
                         <Image
                             src={product.image}

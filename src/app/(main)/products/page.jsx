@@ -5,7 +5,7 @@ const ProductsPage = async() => {
     const res = await fetch('https://sunora-e-commerce-web.vercel.app/data.json')
     const datas = await res.json()
     return (
-        <div className=' containe mx-auto grid grid-cols-4 p-10 gap-10'>
+        <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {
                 datas.map(product=> <PopularProductCard key={product.id} product={product} ></PopularProductCard>)
             }
