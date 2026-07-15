@@ -4,12 +4,9 @@ import { useSpring, animated } from "@react-spring/web";
 import Image from 'next/image';
 import React from 'react';
 import product from '@/assets/product.png'
-import { ArrowBigLeft, ArrowLeft, ArrowRight } from 'lucide-react';
+import {  ArrowRight } from 'lucide-react';
 const HeroSection = () => {
-    const styles = useSpring({
-        from: { opacity: 0 },
-        to: { opacity: 1 },
-    });
+
     return (
         <div className='container mx-auto text-center '>
             <div className='container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 p-3'>
@@ -24,9 +21,9 @@ const HeroSection = () => {
                             HOT OFFER
                         </span>
                     </div>
-                    <animated.h1 style={styles} >
-                        SUMMER SALE
-                    </animated.h1>
+                 
+                        <h1 className='text-7xl '>SUMMER SALE</h1>
+                
                     <h2 className='text-6xl font font-semibold '>50% OFF</h2>
                     <div>
                         <span className='text-sm '>Sunglass . Outfit . SkinCare</span>

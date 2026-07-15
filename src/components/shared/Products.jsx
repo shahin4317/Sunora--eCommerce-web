@@ -1,18 +1,35 @@
 import React from 'react';
-import PopularProductsCard from './PopularProductsCard';
+import PopularProductCard from './PopularProductCard';
+import { BiRightArrow } from 'react-icons/bi';
+import { FaLongArrowAltRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Products = async () => {
 
     const res = await fetch('https://sunora-e-commerce-web.vercel.app/data.json');
     const data = await res.json();
     const products = data.slice(0, 3)
-    console.log(products);
+    console.log({ products });
     return (
 
-        <div>
-            {
-                products.map(product => <PopularProductsCard key={product.id} product={product}></PopularProductsCard>)
-            }
+        <div className='container mx-auto '>
+            <div className="flex justify-between items-center mb-8">
+                <h1 className="text-5xl font-semibold">
+                    Popular Products
+                </h1>
+
+                <Link href={'./products'}><button className="flex items-center gap-2 text-amber-600 hover:text-amber-700 cursor-pointer text-xl">
+                    View All
+                    <FaLongArrowAltRight />
+                </button></Link>
+            </div>
+            <div className='flex gap-5 mt-8 mb-8 items-center justify-center'>
+                {
+                    products.map(product => <PopularProductCard key={product.id} product={product}></PopularProductCard>)
+                }
+
+            </div>
+
         </div>
 
 
