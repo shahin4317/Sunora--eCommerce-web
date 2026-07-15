@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "name": "Aloe Vera Gel",
+    "brand": "NatureGlow",
+    "price": 11,
+    "rating": 4.8,
+    "stock": 16,
+    "description": "Soothing aloe vera gel to cool and hydrate sun-exposed skin.",
+    "image": "https://i.postimg.cc/example10.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 2,
+    "name": "Classic Cotton T-Shirt",
+    "brand": "UrbanWear",
+    "price": 22,
+    "rating": 4.8,
+    "stock": 18,
+    "description": "Soft and breathable cotton t-shirt for everyday comfort.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Shirts"
+  },
+  {
+    "id": 3,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Sunglasses"
+  },
+  {
+    "id": 4,
+    "name": "Insulated Water Bottle",
+    "brand": "HydroCool",
+    "price": 25,
+    "rating": 4.9,
+    "stock": 20,
+    "description": "Keeps your drinks cold for up to 24 hours during hot summer days.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Hydration"
+  },
+  {
+    "id": 5,
+    "name": "SPF 50+ Sunscreen Lotion",
+    "brand": "SunCare",
+    "price": 12,
+    "rating": 4.8,
+    "stock": 25,
+    "description": "High-protection sunscreen suitable for all skin types.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 6,
+    "name": "Cooling Face Towel",
+    "brand": "CoolWave",
+    "price": 10,
+    "rating": 4.5,
+    "stock": 30,
+    "description": "Reusable cooling towel that stays cold for hours.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Fitness"
+  },
+  {
+    "id": 7,
+    "name": "Portable Mini Fan",
+    "brand": "BreezeGo",
+    "price": 22,
+    "rating": 4.7,
+    "stock": 18,
+    "description": "USB rechargeable handheld fan with adjustable speed settings.",
+    "image": "https://i.postimg.cc/example7.png",
+    "category": "Electronics"
+  },
+  {
+    "id": 8,
+    "name": "Ocean Breeze Perfume",
+    "brand": "FreshScents",
+    "price": 35,
+    "rating": 4.9,
+    "stock": 12,
+    "description": "Refreshing long-lasting fragrance with a cool summer scent.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Perfume"
+  },
+  {
+    "id": 9,
+    "name": "Summer Travel Backpack",
+    "brand": "TravelPro",
+    "price": 35,
+    "rating": 4.9,
+    "stock": 8,
+    "description": "Lightweight backpack with multiple compartments for travel essentials.",
+    "image": "https://i.postimg.cc/example9.png",
+    "category": "Bags"
+  },
+    {
+    "id": 10,
+    "name": "Bucket Sun Hat",
+    "brand": "BeachLife",
+    "price": 16,
+    "rating": 4.5,
+    "stock": 22,
+    "description": "Trendy bucket hat offering stylish sun protection.",
+    "image": "https://i.postimg.cc/example8.png",
+    "category": "Caps"
+  }
+
+]

@@ -1,16 +1,33 @@
+"use client";
+
+import { useSpring, animated } from "@react-spring/web";
 import Image from 'next/image';
 import React from 'react';
 import product from '@/assets/product.png'
 import { ArrowBigLeft, ArrowLeft, ArrowRight } from 'lucide-react';
 const HeroSection = () => {
+    const styles = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+    });
     return (
         <div className='container mx-auto text-center '>
-            <div className='flex items-center text-center justify-center gap-15'>
-                <div className='text-left space-y-3'>
+            <div className='container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 p-3'>
+                <div className='text-left space-y-3 '>
+                    <div className="inline-flex items-center gap-2 bg-[#E86A33] text-white px-4 py-2 rounded-full">
+                        <span className="relative flex h-3 w-3">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                        </span>
 
-                    <h2 className='bg-amber-600 text-sm p-2 w-30 rounded-full font-semibold '>HOT OFFER</h2>
-                    <h1 className='text-5xl '>SUMMER SALE</h1>
-                    <h2 className='text-4xl font font-semibold '>50% OFF</h2>
+                        <span className="text-sm font-medium">
+                            HOT OFFER
+                        </span>
+                    </div>
+                    <animated.h1 style={styles} >
+                        <h1 className="text-7xl">SUMMER SALE</h1>
+                    </animated.h1>
+                    <h2 className='text-6xl font font-semibold '>50% OFF</h2>
                     <div>
                         <span className='text-sm '>Sunglass . Outfit . SkinCare</span>
                     </div>
