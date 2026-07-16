@@ -13,7 +13,7 @@ const Products = async () => {
     return (
 
         <div className='container mx-auto '>
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex justify-between items-center mb-8 p-4">
                 <h1 className="text-5xl font-semibold">
                     Popular Products
                 </h1>

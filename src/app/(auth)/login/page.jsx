@@ -1,5 +1,6 @@
 'use client';
 
+import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaEye } from 'react-icons/fa';
@@ -7,6 +8,26 @@ import { IoMdEyeOff } from 'react-icons/io';
 
 const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const onSubmit = async (e) => {
+        e.preventDefault()
+
+        const email = e.target.email.value;
+        const password = e.target.password.value
+        const { data, error } = await authClient.signIn.email({
+            email,
+            password,
+            callbackURL: "/",
+        });
+        if(data){
+            alert('Loging success',data.message)
+
+        }
+        if(error){
+            alert(error.message)
+        }
+        console.log(data,error);
+
+    }
 
     return (
         <div className="min-h-screen bg-[#F8F3EA] flex items-center justify-center px-4">
@@ -16,7 +37,7 @@ const LoginPage = () => {
                 </h1>
 
 
-                <form className="space-y-5">
+                <form className="space-y-5" onSubmit={onSubmit}>
                     {/* Email */}
                     <div>
                         <label className="block text-sm font-semibold mb-2">
@@ -25,6 +46,7 @@ const LoginPage = () => {
 
                         <input
                             type="email"
+                            name='email'
                             placeholder="Enter your email"
                             className="input input-bordered w-full"
                         />
@@ -37,6 +59,7 @@ const LoginPage = () => {
                         </label>
 
                         <input
+                            name='password'
                             type={showPassword ? 'text' : 'password'}
                             placeholder="Enter your password"
                             className="input input-bordered w-full pr-12"

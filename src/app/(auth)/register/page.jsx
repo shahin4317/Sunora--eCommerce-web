@@ -1,11 +1,34 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+import { authClient } from '../../../lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaEye } from 'react-icons/fa';
 import { IoMdEyeOff } from 'react-icons/io';
 const RegisterPage = () => {
+    const router = useRouter()
     const [showPassword, setShowPassword] = useState(false);
+
+    const onSubmit = async (e) => {
+        e.preventDefault()
+        const name = e.target.name.value
+        const email = e.target.email.value
+        const image = e.target.image.value
+        const password = e.target.password.value
+
+        const { data, error } = await authClient.signUp.email({
+            name,
+            email,
+            password,
+            image,
+        });
+        if(!error){
+            router.push('/')
+        }
+    }
+
+
     return (
 
         <div className="min-h-screen bg-[#F8F3EA] flex items-center justify-center px-4">
@@ -15,7 +38,7 @@ const RegisterPage = () => {
                 </h1>
 
 
-                <form className="space-y-5 pt-4">
+                <form className="space-y-5 pt-4" onSubmit={onSubmit}>
                     {/* Name */}
                     <div>
                         <label className="block text-sm font-semibold mb-2">
@@ -24,6 +47,7 @@ const RegisterPage = () => {
 
                         <input
                             type="name"
+                            name='name'
                             placeholder="Enter your Name"
                             className="input input-bordered w-full"
                         />
@@ -37,6 +61,7 @@ const RegisterPage = () => {
 
                         <input
                             type="photo"
+                            name='image'
                             placeholder="Your Name Photo"
                             className="input input-bordered w-full"
                         />
@@ -50,6 +75,7 @@ const RegisterPage = () => {
 
                         <input
                             type="email"
+                            name='email'
                             placeholder="Enter your email"
                             className="input input-bordered w-full"
                         />
@@ -62,7 +88,9 @@ const RegisterPage = () => {
                         </label>
 
                         <input
+
                             type={showPassword ? 'text' : 'password'}
+                            name='password'
                             placeholder="Enter your password"
                             className="input input-bordered w-full pr-12"
                         />
