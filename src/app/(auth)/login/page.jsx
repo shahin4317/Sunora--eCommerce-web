@@ -3,8 +3,11 @@
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { BsGoogle } from 'react-icons/bs';
 import { FaEye } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import { IoMdEyeOff } from 'react-icons/io';
+import { toast } from 'sonner';
 
 const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -18,15 +21,20 @@ const LoginPage = () => {
             password,
             callbackURL: "/",
         });
-        if(data){
-            alert('Loging success',data.message)
+        if (data) {
+            toast.success('Loging success', data.message)
 
         }
-        if(error){
-            alert(error.message)
+        if (error) {
+            toast.error(error.message)
         }
-        console.log(data,error);
+        console.log(data, error);
 
+    }
+    const handelSingIn = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+        });
     }
 
     return (
@@ -73,15 +81,6 @@ const LoginPage = () => {
                             {showPassword ? <FaEye /> : <IoMdEyeOff />}
                         </button>
                     </div>
-
-                    {/* Remember & Forgot */}
-                    <div className="flex justify-between items-center text-sm">
-                        <label className="flex items-center gap-2 cursor-pointer">
-                            <input type="checkbox" className="checkbox checkbox-sm" />
-                            Remember me
-                        </label>
-                    </div>
-
                     {/* Login Button */}
                     <button
                         type="submit"
@@ -91,9 +90,10 @@ const LoginPage = () => {
                     </button>
                 </form>
 
+                <button onClick={handelSingIn} className='flex items-center gap-2 btn btn-primary w-full rounded-lg mt-4'><FcGoogle /> Sing In With Google</button>
                 {/* Register */}
                 <p className="text-center mt-6 text-sm">
-                    Don't have an account?{' '}
+                    Don't have an account?
                     <Link
                         href="/register"
                         className="text-primary font-semibold hover:underline"
