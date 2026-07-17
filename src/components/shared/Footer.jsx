@@ -1,6 +1,6 @@
 // components/Footer.jsx
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaMailBulk, FaPhone, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaPhone, FaTwitter } from "react-icons/fa";
 import { MdOutlinePinDrop } from "react-icons/md";
 import logo from '@/assets/logo.png'
 import Image from "next/image";
@@ -58,14 +58,14 @@ export default function Footer() {
               Follow Us
             </h3>
             <div className="mt-4 flex gap-3">
-              <a href="#" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
+              <a href="https://www.instagram.com/sha_hin__75" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
                 <FaInstagram size={18} />
               </a>
-              <a href="#" aria-label="Facebook" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
+              <a href="https://www.facebook.com/share/15yDdToT2Qg/" aria-label="Facebook" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
                 <FaFacebook size={18} />
               </a>
-              <a href="#" aria-label="Twitter" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
-                <FaTwitter size={18} /> 
+              <a href="https://www.linkedin.com/in/md-shahin-alam-1b24aa321" aria-label="Twitter" className="grid h-10 w-10 place-items-center rounded-full border border-[#2B2B2B]/20 hover:bg-[#C97B5A] hover:text-white hover:border-[#C97B5A] transition">
+                <FaLinkedin size={18} /> 
               </a>
             </div>
           </div>
