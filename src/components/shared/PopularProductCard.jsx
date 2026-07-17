@@ -1,12 +1,27 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
+import { useSpring, animated } from "@react-spring/web";
+
 const PopularProductCard = ({ product }) => {
     console.log(product);
+    const [styles, api] = useSpring(() => ({
+        transform: "scale(1)",
+    }));
+
     return (
-        <div className=''>
+        <animated.div className='' style={styles} onMouseEnter={() =>
+            api.start({
+                transform: "scale(1.05)",
+            })
+        } onMouseLeave={() =>
+            api.start({
+                transform: "scale(1)",
+            })
+        }   >
             <div className=''>
                 <div className="card w-full h-[420px] bg-base-100 shadow-xl">
                     <figure className="h-44 flex items-center justify-center  w-full">
@@ -36,10 +51,10 @@ const PopularProductCard = ({ product }) => {
                             See Details
                         </button></Link>
                     </div>
-                    
-                </div>  
+
+                </div>
             </div>
-        </div>
+        </animated.div>
     );
 };
 
