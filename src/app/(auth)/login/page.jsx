@@ -1,5 +1,4 @@
 'use client';
-
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -11,6 +10,9 @@ import { toast } from 'sonner';
 
 const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
+
+
+
     const onSubmit = async (e) => {
         e.preventDefault()
 

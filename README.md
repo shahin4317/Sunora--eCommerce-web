@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ☀️ Sunora - Summer eCommerce Platform
 
-## Getting Started
+## 📖 Project Overview
 
-First, run the development server:
+**Sunora** is a modern summer-themed eCommerce web application where users can explore and purchase seasonal products such as sunglasses, summer outfits, skincare items, beach accessories, and more.
+
+The platform provides a clean, responsive, and user-friendly shopping experience with secure authentication and product management features.
+
+---
+
+## 🚀 Live Website
+
+🔗 https://sunora-e-commerce-web.vercel.app/
+
+> https://sunora-e-commerce-web.vercel.app/
+---
+
+## 🎯 Project Purpose
+
+The goal of **Sunora** is to provide users with a modern online shopping experience focused on summer essentials. Users can browse products, view detailed information, authenticate securely, and place orders with ease.
+
+---
+
+## ✨ Key Features
+
+- 🔐 Secure user authentication using Better Auth
+- 👤 User registration and login system
+- 🛍️ Browse summer products
+- 📄 View detailed product information
+- ❤️ Modern, responsive, and mobile-friendly UI
+- ⚡ Fast performance with Next.js App Router
+- 🎨 Beautiful design using Tailwind CSS and DaisyUI
+- 🗄️ MongoDB database integration
+- 🔄 Dynamic data fetching
+
+---
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- Tailwind CSS
+- DaisyUI
+- MongoDB
+- Better Auth
+
+---
+
+## 📦 NPM Packages Used
+
+```bash
+better-auth
+@better-auth/mongodb
+mongodb
+react-icons
+tailwindcss
+daisyui
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/shahin4317/Sunora--eCommerce-web.git
+```
+
+Go to the project directory:
+
+```bash
+cd sunora
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 👨‍💻 Developer
 
-To learn more about Next.js, take a look at the following resources:
+**Md. Shahin Alam**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+GitHub: https://github.com/shahin4317
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+LinkedIn: https://www.linkedin.com/in/md-shahin-alam-1b24aa321/
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created for learning and educational purposes.

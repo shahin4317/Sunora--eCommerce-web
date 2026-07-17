@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { FaEye, FaGoogle } from 'react-icons/fa';
 import { IoMdEyeOff } from 'react-icons/io';
 import { FcGoogle } from 'react-icons/fc';
+import { toast } from 'sonner';
 const RegisterPage = () => {
     const router = useRouter()
     const [showPassword, setShowPassword] = useState(false);
@@ -24,8 +25,11 @@ const RegisterPage = () => {
             password,
             image,
         });
-        if(!error){
-            router.push('/')
+        if(data){
+            toast.success.push('/',"Register success")
+        }
+        if(error){
+            toast.error(error.message)
         }
     }
 

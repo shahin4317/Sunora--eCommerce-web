@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                     {user && (<div className="navbar-end gap-3">
 
-                        <Image src={user?.image} alt={user?.name} width={40} height={50} referrerPolicy='no-referrer' className='rounded-full text-center'></Image>
+                        <Link href={'/my-profile'}><Image src={user?.image} alt={user?.name} width={40} height={50} referrerPolicy='no-referrer' className='rounded-full text-center'></Image></Link>
                         <button onClick={handelSingOut} className='btn bg-amber-600 rounded-md'><Link href={'./login'}>Sing Out</Link></button>
                     </div>)}
                     { !user && (
